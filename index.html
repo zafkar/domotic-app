@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuya API test</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", () => {
+				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+			});
+		}
+	</script>
+	<script defer src="./main.js"></script>
+  </body>
+</html>
