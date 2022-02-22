@@ -1,4 +1,4 @@
-const cacheName = "cachev1"; // Change value to force update
+const cacheName = "cachev1.1"; // Change value to force update
 
 self.addEventListener("install", event => {
 	// Kick out the old service worker
@@ -7,10 +7,24 @@ self.addEventListener("install", event => {
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
 			return cache.addAll([
-        "index.html",
-        "main.js",
-        "styles.css",
-        "sw.js"
+        "./mstile-144x144.png",
+        "./mstile-70x70.png",
+        "./styles.css",
+        "./apple-touch-icon.png",
+        "./main.js",
+        "./favicon.ico",
+        "./index.html",
+        "./browserconfig.xml",
+        "./sw.js",
+        "./mstile-310x310.png",
+        "./mstile-150x150.png",
+        "./android-chrome-512x512.png",
+        "./mstile-310x150.png",
+        "./site.webmanifest",
+        "./favicon-32x32.png",
+        "./safari-pinned-tab.svg",
+        "./android-chrome-192x192.png",
+        "./favicon-16x16.png"
 			]);
 		})
 	);
