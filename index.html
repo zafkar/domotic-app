@@ -18,12 +18,17 @@
   </head>
   <body>
     <script>
-		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", () => {
-				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
-			});
-		}
-	</script>
-	<script defer src="./main.js"></script>
+  		if ("serviceWorker" in navigator) {
+  			window.addEventListener("load", () => {
+  				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+  			});
+  		}
+	  </script>
+    <script defer src="./main.js"></script>
+	<script defer src="./jquery.min.js"></script>
+  <header>
+    <h1>External IP</h1>
+  </header>
+  <section><span id="externalip"></span></section>
   </body>
 </html>
