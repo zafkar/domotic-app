@@ -12,11 +12,11 @@ setInterval(() => {
   getIP().then((ip) => {
     $("#externalip").html(ip);
     if (localStorage.getItem("ip") == ip) {
-      $("#externalip").css({
+      $("#wifistatus").css({
         backgroundColor: 'green'
       });
     } else {
-      $("#externalip").css({
+      $("#wifistatus").css({
         backgroundColor: 'red'
       });
     }

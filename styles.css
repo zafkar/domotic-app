@@ -1,5 +1,16 @@
-html {
+body {
   margin:0;
   padding: 0;
-  transition-duration: 1s;
+  background-color: #202020;
+  color: #d0d0d0;
+  font-family: sans-serif;
+}
+
+
+.dot {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: blue;
+  display: inline-block;
 }
