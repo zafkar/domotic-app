@@ -11,6 +11,10 @@ body {
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
-  background-color: blue;
+  background-color: red;
   display: inline-block;
+}
+
+.dot.active {
+  background-color: green;
 }

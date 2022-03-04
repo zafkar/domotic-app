@@ -21,6 +21,7 @@
 
   <body>
     <script defer="defer" src="./jquery.min.js"></script>
+    <script defer="defer" src="./utils.js"></script>
     <script defer="defer" src="./main.js"></script>
 
     <header>
@@ -28,11 +29,10 @@
     </header>
     <section>
       <div>
-        <span id="externalip">0.0.0.0</span>
+        <span id="externalip">0.0.0.0</span><input type="text" id="wifiname"><button id="registerwifi">Register Wifi</button>
       </div>
-      <div>
-        <span id="wifistatus" class="dot"></span>
-        <button id="registerwifi">Register Wifi</button>
+      <div id="knownwifis">
+        
       </div>
 
     </section>

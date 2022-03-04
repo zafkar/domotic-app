@@ -16,6 +16,7 @@ self.addEventListener("install", event => {
         "./index.html",
         "./browserconfig.xml",
         "./sw.js",
+				"./utils.js",
 				"./jquery.min.js",
         "./mstile-310x310.png",
         "./mstile-150x150.png",
